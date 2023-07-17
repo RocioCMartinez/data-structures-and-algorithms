@@ -1,11 +1,9 @@
-# Data Structures
+# data-structures-and-algorithms
 
-## Implementation Notes
+### 401 Data Structures
 
-## Code Challenges
-
-### Challenge 01
-
-Location: `codechallenges/linkedlist/LinkedListChallenges`
-
-Method: `linkedListChallenge06()`
+| Table of Contents - Data Structures                                                  |
+| -------------------------------------------------------------------------------------|
+| [Whiteboarding: Array Reversal](./java/reversedArray/README.md)                      |
+| [Whiteboarding: Insert Shift Array](./java/insertArray/README.md)                    |
+| [Whiteboarding: Binary Array Search](./java/arrayBinarySearch/binarySearch.png)      |
