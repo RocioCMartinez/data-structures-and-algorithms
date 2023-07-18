@@ -53,7 +53,7 @@ public class LinkedList {
     Node newNode = new Node(newValue);
 
     if(this.head == null) { // checking if the list is empty
-      this.head = newNode;
+      System.out.println("List is empty, initial value could not be found");
     } else if (this.head.value == value) { // checking if target value is the head
       newNode.next = this.head;
       this.head = newNode;
@@ -70,6 +70,27 @@ public class LinkedList {
       }
     }
 
+  }
+
+  public void insertAfterValue(int value, int newValue){
+    Node newNode = new Node(newValue);
+
+    if(this.head == null) { // checking if the list is empty
+      System.out.println("List is empty, initial value could not be found");
+    } else if (this.head.value == value) { // checking if target value is the head
+      newNode = this.head.next;
+    } else {                              // adding new node after target value
+      Node currNode = this.head;
+      while (currNode != null && currNode.value != value){
+        currNode = currNode.next;
+      }
+      if (currNode != null) {
+        newNode.next = currNode.next;
+        currNode.next = newNode;
+      } else {                                  // if target value is not found
+        System.out.println("Value " + value + " is not in the list.");
+      }
+    }
   }
 
   @Override public String toString() {
