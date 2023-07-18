@@ -112,4 +112,28 @@ public class LinkedListTest
 
     assertEquals("{ 5 } -> { 10 } -> { 20 } -> { 30 } -> Null", sut.toString());
   }
+
+  @Test void testInsertAfterValue() {
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+
+    sut.insertAfterValue(20, 25);
+
+    assertEquals("{ 10 } -> { 20 } -> { 25 } -> { 30 } -> Null", sut.toString());
+  }
+
+  @Test void testInsertAfterLastValue() {
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+
+    sut.insertAfterValue(30, 35);
+
+    assertEquals("{ 10 } -> { 20 } -> { 30 } -> { 35 } -> Null", sut.toString());
+  }
 }
