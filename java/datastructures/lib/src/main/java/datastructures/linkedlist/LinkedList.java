@@ -7,30 +7,23 @@ public class LinkedList {
   Node head = null;
   Node tail = null;  // not strictly required
 
+  public LinkedList(){
+    this.head = null;
 
-
-  LinkedList myLL = new LinkedList();
-
-
-
-
+  }
 
   //Insert new Node and make it the head of LinkedList
   public void insert(int value) {
 
     Node newHeadNode = new Node(value);
+    newHeadNode.next = this.head;
+    this.head = newHeadNode;
 
-    if (myLL.head != null) {
-      newHeadNode.next = myLL.head;
-      myLL.head = newHeadNode;
-    } else {
-      head = newHeadNode;
-    }
   }
 
   // Traverse the LinkedList return boolean if the value is included
   public boolean includes(int value) {
-    Node currNode = head;
+    Node currNode = this.head;
 
     while (currNode != null) {
       if (currNode.value == value) {
@@ -43,16 +36,19 @@ public class LinkedList {
 
   @Override public String toString() {
     StringBuilder myLLValues = new StringBuilder();
-    myLLValues.append("{ ");
+
     Node currNode = head;
+
     while (currNode != null){
+      myLLValues.append("{ ");
       myLLValues.append(currNode.value);
-      myLLValues.append(" } -> { ");
+      myLLValues.append(" } -> ");
       currNode = currNode.next;
     }
     myLLValues.append("Null");
     return myLLValues.toString();
 
   }
+
 }
 
