@@ -66,4 +66,50 @@ public class LinkedListTest
 
     assertFalse(includes);
   }
+
+  @Test void testAppendOneNode() { // For empty list
+    LinkedList sut = new LinkedList();
+
+    sut.append(1);
+
+    Node currNode = sut.head;
+
+    assertEquals(1, currNode.value);
+  }
+
+  @Test void testAppendManyNodes() {
+    LinkedList sut = new LinkedList();
+
+    sut.append(1);
+    sut.append(2);
+    sut.append(3);
+
+
+    assertEquals("{ 1 } -> { 2 } -> { 3 } -> Null", sut.toString());
+
+  }
+
+  @Test void testInsertBeforeValue() {
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+
+    sut.insertBeforeValue(30, 25);
+
+    assertEquals("{ 10 } -> { 20 } -> { 25 } -> { 30 } -> Null", sut.toString());
+  }
+
+  @Test void testInsertBeforeFirstValue(){
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+
+    sut.insertBeforeValue(10, 5);
+
+    assertEquals("{ 5 } -> { 10 } -> { 20 } -> { 30 } -> Null", sut.toString());
+  }
 }
