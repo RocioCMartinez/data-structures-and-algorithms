@@ -136,4 +136,45 @@ public class LinkedListTest
 
     assertEquals("{ 10 } -> { 20 } -> { 30 } -> { 35 } -> Null", sut.toString());
   }
+
+  @Test void testkthFromTheEnd() {
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+    sut.append(40);
+
+   int actualOutcome = sut.kthFromTheEnd(2);
+
+    assertEquals(20, actualOutcome);
+  }
+
+  @Test void testkOutOfBound() { /// throws an argumentException: k is larger than the LinkedList size
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+    sut.append(40);
+
+
+
+    assertThrows(IllegalArgumentException.class, ()-> sut.kthFromTheEnd(10));
+  }
+
+  @Test void testkIsNegative() {   // Always returns the last node value
+    LinkedList sut = new LinkedList();
+
+    sut.append(10);
+    sut.append(20);
+    sut.append(30);
+    sut.append(40);
+
+    int actualOutcome = sut.kthFromTheEnd(-5);
+
+    assertEquals(40, actualOutcome);
+  }
+
+
 }

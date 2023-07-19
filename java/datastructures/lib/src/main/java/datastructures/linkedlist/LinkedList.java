@@ -93,6 +93,32 @@ public class LinkedList {
     }
   }
 
+  public int kthFromTheEnd(int k){
+    if (head == null) {  // if list is empty
+      throw new IllegalStateException("LinkedList is empty");
+    }
+
+    Node kBehindTail = head;          //ChatGPT helped me understand the positions and movements of these nodes
+    Node tailFinder = head;
+
+    // Move the tailFinder pointer k positions ahead
+    for (int i = 0; i < k; i++) {
+      if (tailFinder == null) {
+        throw new IllegalArgumentException("k is larger than the LinkedList size");
+      }
+      tailFinder = tailFinder.next;
+    }
+
+    // Move both pointers until the fast pointer reaches the end
+    while (tailFinder.next != null) {  //Had to ensure I stopped AT the last Node not null
+      kBehindTail = kBehindTail.next;
+      tailFinder = tailFinder.next;
+    }
+
+    return kBehindTail.value;
+  }
+
+
   @Override public String toString() {
     StringBuilder myLLValues = new StringBuilder();
 
