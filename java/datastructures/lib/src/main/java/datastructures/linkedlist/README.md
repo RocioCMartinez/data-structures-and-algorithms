@@ -30,8 +30,15 @@ to string
 > Return the node’s value that is k places from the tail of the linked list.
 > You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
+> zip lists
+> Arguments: 2 linked lists
+> Return: New Linked List, zipped as noted below
+> Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the zipped list.
+
+
 ## Whiteboard Process
 - [kthFromTheEnd method](kthPseudoCode.png)
+- [ZipLinkLists method](ZipLinkLists.png)
 
 ## Approach & Efficiency
 Any exceptions or errors that come from your code should be contextual, descriptive, capture-able errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom error that describes what went wrong in calling the methods you wrote for this lab.
@@ -51,6 +58,10 @@ Where k and the length of the list are the same
 Where k is not a positive integer
 Where the linked list is of a size 1
 “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+Wrote test for zip list method general function
+test for getting a null list as an argument
+test for zipping lists of different lengths
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
