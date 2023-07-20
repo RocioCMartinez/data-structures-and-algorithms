@@ -137,7 +137,7 @@ public class LinkedListTest
     assertEquals("{ 10 } -> { 20 } -> { 30 } -> { 35 } -> Null", sut.toString());
   }
 
-  @Test void testkthFromTheEnd() {
+  @Test void testKthFromTheEnd() {
     LinkedList sut = new LinkedList();
 
     sut.append(10);
@@ -150,7 +150,7 @@ public class LinkedListTest
     assertEquals(20, actualOutcome);
   }
 
-  @Test void testkOutOfBound() { /// throws an argumentException: k is larger than the LinkedList size
+  @Test void testKOutOfBound() { /// throws an argumentException: k is larger than the LinkedList size
     LinkedList sut = new LinkedList();
 
     sut.append(10);
@@ -174,6 +174,59 @@ public class LinkedListTest
     int actualOutcome = sut.kthFromTheEnd(-5);
 
     assertEquals(40, actualOutcome);
+  }
+
+  @Test void testZipLinkedLists() {
+    LinkedList sut1 = new LinkedList();
+
+    sut1.append(5);
+    sut1.append(15);
+    sut1.append(25);
+    sut1.append(35);
+
+    LinkedList sut2 = new LinkedList();
+
+    sut2.append(10);
+    sut2.append(20);
+    sut2.append(30);
+    sut2.append(40);
+
+    String actualOutcome = sut1.zipLists(sut1,sut2).toString();
+
+    assertEquals("{ 5 } -> { 10 } -> { 15 } -> { 20 } -> { 25 } -> { 30 } -> { 35 } -> { 40 } -> Null", actualOutcome);
+  }
+
+  @Test void testZipNullList() { // provides error when a list is null
+    LinkedList sut1 = new LinkedList();
+
+    sut1.append(10);
+    sut1.append(20);
+    sut1.append(30);
+    sut1.append(40);
+
+    LinkedList sut2 = null;
+
+    LinkedList actualOutcome = sut1.zipLists(sut1, sut2);
+
+    assertEquals(sut1, actualOutcome);
+  }
+
+  @Test void testZipLinkedListsSizes() {
+    LinkedList sut1 = new LinkedList();
+
+    sut1.append(5);
+    sut1.append(15);
+    sut1.append(25);
+    sut1.append(35);
+
+    LinkedList sut2 = new LinkedList();
+
+    sut2.append(10);
+    sut2.append(20);
+
+    String actualOutcome = sut1.zipLists(sut1,sut2).toString();
+
+    assertEquals("{ 5 } -> { 10 } -> { 15 } -> { 20 } -> { 25 } -> { 35 } -> Null", actualOutcome);
   }
 
 

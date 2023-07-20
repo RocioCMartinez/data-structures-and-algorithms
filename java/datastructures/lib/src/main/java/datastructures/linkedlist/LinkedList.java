@@ -109,7 +109,7 @@ public class LinkedList {
       tailFinder = tailFinder.next;
     }
 
-    // Move both pointers until the fast pointer reaches the end
+    // Move both pointers until the tailFinder pointer reaches the end
     while (tailFinder.next != null) {  //Had to ensure I stopped AT the last Node not null
       kBehindTail = kBehindTail.next;
       tailFinder = tailFinder.next;
@@ -117,6 +117,36 @@ public class LinkedList {
 
     return kBehindTail.value;
   }
+
+
+
+    public static LinkedList zipLists(LinkedList list1, LinkedList list2) {
+      if (list1 == null) return list2;
+      if (list2 == null) return list1;
+
+      Node current1 = list1.head;
+      Node current2 = list2.head;
+      Node temp1, temp2;
+
+      while (current1 != null && current2 != null) {
+        temp1 = current1.next;
+        temp2 = current2.next;
+
+        current1.next = current2;
+        current2.next = temp1;
+
+        current1 = temp1;
+        current2 = temp2;
+      }
+
+      // If there are remaining nodes in list2, append them to the end of list1
+      if (current2 != null) {
+        current1.next = current2;
+      }
+
+      return list1;
+    }
+
 
 
   @Override public String toString() {
