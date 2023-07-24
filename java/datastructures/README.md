@@ -8,3 +8,5 @@
 | [White boarding: Insert Shift Array](./lib/src/main/java/codechallenges/insertArray/README.md)        |
 | [White boarding: Binary Array Search](./lib/src/main/java/codechallenges/arrayBinarySearch/README.md) |
 | [Linked List: Data Structures](./lib/src/main/java/datastructures/linkedlist/README.md)               |
+| [Queue: Data Structures](./lib/src/main/java/datastructures/queue/ReadMe.md)                          |
+| [Stack: Data Structures](./lib/src/main/java/datastructures/stack/ReadMe.md)                          |

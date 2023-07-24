@@ -11,7 +11,7 @@ public class Queue<T>
     // Created the node to hold the value we want to add
     Node<T> newNode = new Node<>(valueToEnqueue);
     // We check if the queue is empty, if so our newNode will be assigned as both front and back because it is the only value inside
-    if (isEmpty()) { // This will come into play by the end with isEmpty method
+    if (front == null) {
       front = newNode;
       back = newNode;
     } else {
@@ -25,7 +25,7 @@ public class Queue<T>
   }
 
   T dequeue() {
-    if (isEmpty()){
+    if (front == null){
       return null;
     }
     // Create a variable to record the value of the front node
