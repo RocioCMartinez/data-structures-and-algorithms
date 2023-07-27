@@ -16,10 +16,16 @@ Returns: Value of the node located at the top of the stack
 Should raise exception when called on empty stack
 is empty
 Arguments: none
-Returns: Boolean indicating whether or not the stack is empty.
+Returns: Boolean indicating whether the stack is empty.
+
+# BracketValidation
+Write a function called validate brackets
+Arguments: string
+Return: boolean
+representing whether the brackets in the string are balanced or not
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+- [BracketValidation Whiteboard](BracketValidation.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
