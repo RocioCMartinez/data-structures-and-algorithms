@@ -10,3 +10,4 @@
 | [Linked List: Data Structures](./lib/src/main/java/datastructures/linkedlist/README.md)               |
 | [Queue: Data Structures](./lib/src/main/java/datastructures/queue/ReadMe.md)                          |
 | [Stack: Data Structures](./lib/src/main/java/datastructures/stack/ReadMe.md)                          |
+| [Trees: Data Structures](./lib/src/main/java/datastructures/trees/ReadMe.md)                          |
