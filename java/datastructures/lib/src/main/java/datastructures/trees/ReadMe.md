@@ -5,7 +5,7 @@ Create a Node class that has properties for the value stored in the node, the le
 Binary Tree
 Create a Binary Tree class
 Define a method for each of the depth first traversals:
-pre order
+pre-order
 in order
 post order
 Each depth first traversal method should return an array of values, ordered appropriately.
@@ -30,6 +30,20 @@ Returns: number
 Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
 - [Find Max Value Whiteboard](maxValueBinaryTree.png)
+
+## FizzBuzzTree
+
+Write a function called fizz buzz tree
+Arguments: k-ary tree
+Return: new k-ary tree
+Determine whether the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
+
+If the value is divisible by 3, replace the value with “Fizz”
+If the value is divisible by 5, replace the value with “Buzz”
+If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+- [FizzBuzzTree](fizzBuzzTree.png)
 
 ## Resources
 
