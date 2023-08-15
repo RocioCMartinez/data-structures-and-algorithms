@@ -11,3 +11,7 @@
 | [Queue: Data Structures](./lib/src/main/java/datastructures/queue/ReadMe.md)                          |
 | [Stack: Data Structures](./lib/src/main/java/datastructures/stack/ReadMe.md)                          |
 | [Trees: Data Structures](./lib/src/main/java/datastructures/trees/ReadMe.md)                          |
+
+| Table of Contents - Blogs                                                                                 |
+|-----------------------------------------------------------------------------------------------------------|
+| [Insert Sort Blog: Ascending Array Values](./lib/src/main/java/codechallenges/blogs/insertionsortblog.md) |
