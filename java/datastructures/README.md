@@ -15,3 +15,4 @@
 | Table of Contents - Blogs                                                                                 |
 |-----------------------------------------------------------------------------------------------------------|
 | [Insert Sort Blog: Ascending Array Values](./lib/src/main/java/codechallenges/blogs/insertionsortblog.md) |
+| [Merge Sort Blog: Ascending Array Values](./lib/src/main/java/codechallenges/blogs/mergesortblog.md)      |
