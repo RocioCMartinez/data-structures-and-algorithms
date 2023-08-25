@@ -11,6 +11,7 @@
 | [Queue: Data Structures](./lib/src/main/java/datastructures/queue/ReadMe.md)                          |
 | [Stack: Data Structures](./lib/src/main/java/datastructures/stack/ReadMe.md)                          |
 | [Trees: Data Structures](./lib/src/main/java/datastructures/trees/ReadMe.md)                          |
+| [HashTables/Maps: Data Structures](./lib/src/main/java/codechallenges/hashtables/readme.md)           |
 
 | Table of Contents - Blogs                                                                                 |
 |-----------------------------------------------------------------------------------------------------------|
