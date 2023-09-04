@@ -12,6 +12,8 @@
 | [Stack: Data Structures](./lib/src/main/java/datastructures/stack/ReadMe.md)                          |
 | [Trees: Data Structures](./lib/src/main/java/datastructures/trees/ReadMe.md)                          |
 | [HashTables/Maps: Data Structures](./lib/src/main/java/codechallenges/hashtables/readme.md)           |
+| [White boarding: Repeated word/hashset](./lib/src/main/java/codechallenges/hashtables/CC31readme.md)  |
+ 
 
 | Table of Contents - Blogs                                                                                 |
 |-----------------------------------------------------------------------------------------------------------|
